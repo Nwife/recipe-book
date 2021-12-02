@@ -1,10 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //page components
-import Home from './page/home/Home';
-import Create from './page/home/Home';
-import Search from './page/home/Home';
-import Recipe from './page/home/Home';
+import Navbar from './componenets/Navbar';
+import Home from './pages/home/Home';
+import Create from './pages/create/Create';
+import Search from './pages/search/Search';
+import Recipe from './pages/recipes/Recipe';
 
 //styles
 import './App.css'
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
